@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "f625c82b-5b60-4620-9034-273bfc7975f3",
+		"name": "DDMP_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36027669"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "New Request",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdiZTlmOGQ0MmE3N2Y4YzVlZTA2MmEiLCJpYXQiOjE3NTI5NTEzMTAsImV4cCI6MTc1Mjk1MjIxMH0.4T9RROTvpH9NfrTb4fmXogBusG3I0ZJlIzf96vkJ2EU\",\"refreshToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdiZTlmOGQ0MmE3N2Y4YzVlZTA2MmEiLCJpYXQiOjE3NTI5NTEzMTAsImV4cCI6MTc1MzU1NjExMH0.oKgYAJnVf6XWHauYMZ5hgBHhhtmRLoN1vwF9eniAOKQ\"}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdiZDkyMWQ0MmE3N2Y4YzVlZTA2MjMiLCJpYXQiOjE3NTI5NDk5MjksImV4cCI6MTc1Mjk1MDgyOX0.0DLcv6xf1Xhw18z2BkM7qV6wCv6C0QJGhcixOYWdyB8\",\"refreshToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdiZDkyMWQ0MmE3N2Y4YzVlZTA2MjMiLCJpYXQiOjE3NTI5NDk5MjksImV4cCI6MTc1MzU1NDcyOX0.TxOTCSlVDTSKx5PlkXR9Cz4amvGbUZbmZqLikm8asro",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n  {\r\n  \"email\": \"nithi@gmail.com\",\r\n  \"password\": \"123456\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdiZDkyMWQ0MmE3N2Y4YzVlZTA2MjMiLCJpYXQiOjE3NTI5NDk5MjksImV4cCI6MTc1Mjk1MDgyOX0.0DLcv6xf1Xhw18z2BkM7qV6wCv6C0QJGhcixOYWdyB8\",\"refreshToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdiZDkyMWQ0MmE3N2Y4YzVlZTA2MjMiLCJpYXQiOjE3NTI5NDk5MjksImV4cCI6MTc1MzU1NDcyOX0.TxOTCSlVDTSKx5PlkXR9Cz4amvGbUZbmZqLikm8asro",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n  {\r\n  \"email\": \"nithi@gmail.com\",\r\n  \"password\": \"123456\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"25-71uUsMgZY3FdZp9j1h5YMrBIOgg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 19 Jul 2025 18:57:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Logged out successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Collection",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Document",
+			"item": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
